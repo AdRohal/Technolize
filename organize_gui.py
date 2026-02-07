@@ -191,8 +191,17 @@ def relocate_legacy_folders(base_folder: Path, moves: List[Tuple[Path, Path]]) -
 class OrganizerApp:
     def __init__(self, root: tk.Tk) -> None:
         self.root = root
-        self.root.title("Folder Organizer")
+        self.root.title("Technolize Organizer")
         self.root.geometry("1180x740")
+        # Center the window on screen
+        self.root.update_idletasks()
+        screen_width = self.root.winfo_screenwidth()
+        screen_height = self.root.winfo_screenheight()
+        window_width = 1180
+        window_height = 740
+        x = (screen_width - window_width) // 2
+        y = (screen_height - window_height) // 2
+        self.root.geometry(f"{window_width}x{window_height}+{x}+{y}")
         self.root.minsize(960, 640)
         self.theme_mode = "light"
         set_palette(LIGHT_PALETTE)
