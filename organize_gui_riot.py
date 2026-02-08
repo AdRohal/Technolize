@@ -145,6 +145,14 @@ class RiotFileOrganizer:
         self.root.title("Technolize Organizer")
         self.root.geometry("1600x900")
         
+        # Set window icon
+        try:
+            icon_path = Path(__file__).parent / "assets" / "logo.ico"
+            if icon_path.exists():
+                self.root.iconbitmap(str(icon_path))
+        except Exception as e:
+            print(f"Could not load icon: {e}")
+        
         # Center window
         self.root.update_idletasks()
         screen_width = self.root.winfo_screenwidth()

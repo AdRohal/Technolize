@@ -213,7 +213,7 @@ When ready to release:
 
 1. **Create .exe**: Use PyInstaller
 ```bash
-pyinstaller --onefile --windowed organize_gui_riot.py
+pyinstaller --onefile --windowed --icon=assets/logo.ico --name="Technolize Organizer" organize_gui_riot.py
 ```
 
 2. **Create Icon**: Design a 256x256 icon file

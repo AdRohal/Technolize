@@ -1,1 +1,39 @@
-/organize_gui.runlog
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+build/
+*.whl
+.Python
+
+# PyInstaller
+*.spec
+*.manifest
+
+# Logs
+*.log
+*.runlog
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+desktop.ini
+
+# Project specific
+organize_gui.runlog
